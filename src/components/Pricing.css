@@ -1,0 +1,230 @@
+.pricing {
+  background-color: var(--dark);
+  padding: var(--spacing-xl) 0;
+}
+
+.plan-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.category-button {
+  background-color: var(--dark-medium);
+  color: var(--text-light);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.category-button.active {
+  background-color: var(--primary);
+  color: var(--dark);
+  border-color: var(--primary);
+}
+
+.category-button:hover:not(.active) {
+  border-color: var(--primary);
+  background-color: rgba(255, 215, 0, 0.1);
+}
+
+.billing-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-xl);
+  gap: var(--spacing-md);
+}
+
+.billing-toggle span {
+  font-size: 1rem;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.billing-toggle span.active {
+  opacity: 1;
+  font-weight: 600;
+}
+
+.toggle-switch {
+  width: 60px;
+  height: 30px;
+  background-color: var(--dark-medium);
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.toggle-knob {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 22px;
+  height: 22px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.toggle-knob.yearly {
+  transform: translateX(30px);
+}
+
+.save-badge {
+  background-color: var(--primary);
+  color: var(--dark);
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 5px;
+  font-weight: 700;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.pricing-card {
+  background-color: var(--dark-light);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 215, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.pricing-card.popular {
+  border: 2px solid var(--primary);
+  transform: scale(1.05);
+  z-index: 1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 215, 0, 0.1);
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 215, 0, 0.1);
+}
+
+.pricing-card.popular:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background-color: var(--primary);
+  color: var(--dark);
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.pricing-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: var(--spacing-xs);
+  color: var(--primary);
+}
+
+.plan-description {
+  margin-bottom: var(--spacing-md);
+  opacity: 0.8;
+}
+
+.price {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-lg);
+  display: flex;
+  align-items: baseline;
+}
+
+.currency {
+  font-size: 1.5rem;
+  margin-right: 2px;
+  font-weight: 600;
+}
+
+.amount {
+  font-weight: 700;
+}
+
+.period {
+  font-size: 1rem;
+  opacity: 0.7;
+  margin-left: 2px;
+}
+
+.features-list {
+  list-style: none;
+  margin-bottom: var(--spacing-lg);
+  flex-grow: 1;
+}
+
+.features-list li {
+  margin-bottom: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+}
+
+.pricing-button {
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  margin-top: auto;
+}
+
+.category-title {
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.category-title h3 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: var(--spacing-lg) auto 0;
+  }
+
+  .pricing-card.popular {
+    transform: scale(1);
+  }
+
+  .pricing-card.popular:hover {
+    transform: translateY(-5px);
+  }
+  
+  .plan-categories {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-sm);
+  }
+  
+  .category-button {
+    width: auto;
+    margin-bottom: 8px;
+  }
+} 

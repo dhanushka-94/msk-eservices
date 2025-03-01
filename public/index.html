@@ -2,14 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon/favicon.svg">
+    <link rel="manifest" href="%PUBLIC_URL%/favicon/site.webmanifest">
+    <link rel="mask-icon" href="%PUBLIC_URL%/favicon/safari-pinned-tab.svg" color="#ffd700">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffd700">
+    <meta name="msapplication-config" content="%PUBLIC_URL%/favicon/browserconfig.xml">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#121212" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="MSK eServices offers premium web hosting, VPS, dedicated servers, cloud hosting, WordPress hosting, and radio streaming solutions. Fast, secure, and reliable hosting with 24/7 support."
     />
+    <meta name="keywords" content="web hosting, VPS hosting, dedicated servers, cloud hosting, WordPress hosting, radio hosting, streaming services, MSK eServices" />
+    <meta name="author" content="MSK eServices" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="MSK eServices - Premium Web & Radio Hosting Solutions" />
+    <meta property="og:description" content="Fast, secure, and reliable hosting solutions for businesses of all sizes. Shared hosting, VPS, dedicated servers, cloud hosting, WordPress hosting, and radio streaming services." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mskeservices.com" />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MSK eServices - Premium Web & Radio Hosting Solutions" />
+    <meta name="twitter:description" content="Fast, secure, and reliable hosting solutions for businesses of all sizes. Shared hosting, VPS, dedicated servers, cloud hosting, WordPress hosting, and radio streaming services." />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="canonical" href="https://mskeservices.com" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,7 +45,52 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MSK eServices - Premium Web & Radio Hosting Solutions</title>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "MSK eServices",
+        "url": "https://mskeservices.com",
+        "logo": "https://mskeservices.com/logo.png",
+        "description": "Premium web hosting and radio streaming solutions for businesses of all sizes.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "No.296/3D, Delpe junction",
+          "addressLocality": "Ragama",
+          "addressCountry": "LK"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+94-71-5-321-750",
+          "contactType": "customer service",
+          "availableLanguage": ["English"]
+        },
+        "sameAs": [
+          "https://mskeservices.com"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://mskeservices.com",
+        "name": "MSK eServices",
+        "description": "Premium web hosting and radio streaming solutions for businesses of all sizes.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://mskeservices.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# MSK eServices - Web & Radio Hosting
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive website for MSK eServices, offering premium web hosting and radio streaming solutions.
 
-## Available Scripts
+![MSK eServices](public/favicon/logo.svg)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Comprehensive Hosting Plans**
+  - Shared Hosting
+  - Cloud Hosting
+  - VPS Hosting
+  - WordPress Hosting
+  - Dedicated Servers
+  - Radio Hosting
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Modern UI/UX**
+  - Responsive design for all devices
+  - Smooth animations and transitions
+  - Intuitive navigation
+  - Back-to-top button for better user experience
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Enhanced Contact Form**
+  - Quick service request buttons
+  - Multiple contact methods
+  - Tabbed interface for different contact options
 
-### `npm test`
+- **SEO Optimized**
+  - Comprehensive meta tags
+  - Structured data (JSON-LD)
+  - Sitemap.xml
+  - Robots.txt
+  - Custom favicon set
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- React.js
+- React Router
+- CSS3 with custom variables
+- Font Awesome icons
+- Responsive design principles
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (v14 or higher)
+- npm (v6 or higher)
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/dhanushka-94/msk-eservices.git
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Navigate to the project directory:
+   ```bash
+   cd msk-eservices
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-## Learn More
+5. Open your browser and visit:
+   ```
+   http://localhost:3000
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+msk-eservices/
+├── public/
+│   ├── favicon/            # Favicon files
+│   │   └── logo.svg        # MSK eServices logo
+│   ├── index.html          # HTML template
+│   ├── manifest.json       # Web app manifest
+│   ├── robots.txt          # Robots file for SEO
+│   └── sitemap.xml         # Sitemap for SEO
+├── src/
+│   ├── components/         # React components
+│   │   ├── BackToTop.js    # Back to top button
+│   │   ├── Contact.js      # Contact form
+│   │   ├── Footer.js       # Footer component
+│   │   ├── Header.js       # Header component
+│   │   ├── Hero.js         # Hero section
+│   │   ├── Pricing.js      # Pricing plans
+│   │   └── Services.js     # Services section
+│   ├── pages/              # Page components
+│   │   ├── PrivacyPolicy.js
+│   │   ├── TermsOfService.js
+│   │   └── Legal.js
+│   ├── App.js              # Main App component
+│   ├── index.js            # Entry point
+│   └── index.css           # Global styles
+└── scripts/                # Utility scripts
+    └── generate-favicons.js # Favicon generation script
+```
 
-### Code Splitting
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To build the project for production:
 
-### Analyzing the Bundle Size
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This will create a `build` directory with optimized production files.
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Advanced Configuration
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+MSK eServices - [we-services@mskcomputers.lk](mailto:we-services@mskcomputers.lk)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: [https://github.com/dhanushka-94/msk-eservices](https://github.com/dhanushka-94/msk-eservices)
